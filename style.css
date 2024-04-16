@@ -1,0 +1,42 @@
+body {
+   
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+
+}
+
+#map {
+
+  height: 100vh;
+  width: 100vw;
+}
+
+#loader {
+
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 500;
+    border: 10px solid lightgray;
+    border-top: 10px solid blue;
+    border-bottom: 10px solid red;
+    border-right: 10px solid yellow;
+    border-left: 10px solid rgb(5, 226, 5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+        
+    }
+     
+    @keyframes spin {
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);}
+    }
