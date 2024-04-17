@@ -37,7 +37,7 @@ var map = L.map('map',{
     }]
 });
 
- L.control.locate().addTo(map);
+ 
 
  
 // extra part
@@ -118,6 +118,7 @@ var control = L.Routing.control({
     },
     geocoder: L.Control.Geocoder.nominatim()
 })
+
  
 .on('routingstart', showSpinner)
 .on('routesfound routingerror', hideSpinner)
