@@ -37,6 +37,8 @@ var map = L.map('map',{
     }]
 });
 
+ L.control.locate().addTo(map);
+
  
 // extra part
 // var mapLayers = L.control.layers(baseMaps).addTo(map);
